@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and(orientation: landscape){
+            body{
+                border: 2px solid green;
+            }
+        }
+      @media only screen and (max-width:445px){
+        body{
+            background-color: blue;
+        }
+      }
+      .box{
+        width: 344px;
+        height: 344px;
+        background-color: white;
+        padding: 10px;
+        margin: 2px;
+      }
+    </style>
+</head>
+<body>
+    <div>Hey I am Nkesh Chaudhari</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
