@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: rgb(50, 50, 83);
+    --seccolor:rgb(190, 171, 171);
+}
+div:first-child{
+    background-color: var(--seccolor);
+}
+.container{
+    background-color: var(--color);
+    color: white;
+}
+ul{
+    display: flex;
+    
+}
+ul li {
+    list-style-type: none;
+    padding: 20px;
+   
+    border: 2px solid var(--color);
+}
+ul li:first-child{
+    --color:orange;
+    background-color: var(--color);
+}
