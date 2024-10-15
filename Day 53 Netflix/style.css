@@ -142,8 +142,16 @@ nav button {
     margin: auto;
     color: white;
     align-items: center;
+    flex-wrap: wrap;
 
 }
+@media screen and (max-width: 500px){
+   
+    .first{
+        flex-wrap: wrap;
+    }
+}
+    
 
 .sec-image {
     position: relative;
@@ -164,7 +172,7 @@ nav button {
     position: absolute;
     width: 23vw;
     top: 40px;
-    
+    overflow: hidden;
     right: 50px;
 
 }
@@ -197,7 +205,39 @@ flex-direction: column;
 .faq-box{
     display: flex;
     background-color: rgb(78, 76, 76);
-    padding: 34px;
-    width: 100vw;
+    padding: 20px;
+    max-width: 40vw;
     color: #fff;
+    margin: 24px auto;
+    justify-content: space-between;
+    font-size: 25px;
+   cursor: pointer;
+}
+.faq-box:hover{
+    background-color: #332d2d;
+}
+.faq h2{
+    color: white;
+    text-align: center;
+    background-color: rgb(21, 31, 21);
+    padding: 30px;
+
+}
+
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 50px;
+}
+.footer-item a{
+    color: white;
 }
